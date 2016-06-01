@@ -1,0 +1,139 @@
+//@import "./search.less"
+//@import "./todo.less"
+.navbar {
+    background-color: #2b3643;
+    border-bottom: 1px solid #2b3643;
+    color: #f0faff;
+    height: 46px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    min-height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    .container-fluid {
+        margin-left: 0px;
+        padding-left: 0px;
+        height: 100%;
+        min-width: 1024px;
+        padding-right: 15px;
+        margin-right: auto;
+        display: block;
+        .navbar-header {
+            padding-left: 12px;
+            width: 57px;
+            height: 46px;
+            padding-top: 2px;
+            margin-right: 0;
+            margin-left: 0;
+            float: left;
+            .navbar-indent {
+                background: url(../../img/navbar_indent.png) no-repeat 0 3px;
+                margin-top: 10px;
+                width: 40px;
+                height: 30px;
+                display: inline-block;
+                color: #337ab7;
+                text-decoration: none;
+                outline: none;
+                cursor: auto;
+            }
+            .logo-a {
+                margin-top: 10px;
+                width: 40px;
+                height: 30px;
+                display: inline-block;
+                .logo-img {
+                    margin-top: -10px;
+                    margin-left: -10px;
+                    vertical-align: middle;
+                    border: 0;
+                    color: #337ab7;
+           
+                }
+            }
+        }
+        .version {
+            line-height: 46px;
+            height: 46px;
+            .content {
+                position: relative;
+                top: 3px;
+                margin-left: 120px;
+                font-family: 微软雅黑, 宋体;
+                font-size: 12px;
+                width: 140px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                color: #c6cfda;
+                display: inline-block;
+            }
+        }
+        .right {
+            height: 100%;
+            float: right!important;
+            margin-right: -15px;
+            >li {
+                float: left;
+                height: 100%;
+                position: relative;
+                display: block;
+                list-style: none;
+            }
+            .searchMenu {
+                margin-right: 5px;
+                .searchInput {
+                    margin-top: 10px;
+                    height: 28px;
+                    border-radius: 5px;
+                    padding: 6px 22px 6px 12px;
+                    display: block;
+                    width: 100%;
+                    font-size: 14px;
+                    line-height: 1.42857143;
+                    color: #555;
+                    background-color: #fff;
+                    background-image: none;
+                    border: 1px solid #ccc;
+                    font: inherit;
+                }
+                .searchButton {
+                    background: url(../../img/searchMenu.png) no-repeat;
+                    display: inline-block;
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    top: 15px;
+                    right: 2px;
+                }
+            }
+            .user {
+                margin-right: 2px;
+                height: 100%;
+                float: left;
+                position: relative;
+                display: block;
+                list-style: none;
+                .a {
+                    min-width: 80px;
+                    margin-top: 2px;
+                    color: #c6cfda;
+                    position: relative;
+                    display: block;
+                    padding: 5px 12px;
+                    height: 100%;
+                    line-height: 30px;
+                    font-family: 微软雅黑, 宋体;
+                    font-size: 12px;
+                    outline: none;
+                    text-decoration: none;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
